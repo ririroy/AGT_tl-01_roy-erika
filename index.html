@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - de A à Z</title>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+    <header id="header">
+        <h1>CSS de A à Z</h1>
+        <nav>
+            <ul>
+                <li><a href="#sectionA" aria-label="Aller à la section A">A</a></li>
+                <li><a href="#sectionB" aria-label="Aller à la section B">B</a></li>
+                <li><a href="#sectionC" aria-label="Aller à la section C">C</a></li>
+                <li><a href="#sectionD" aria-label="Aller à la section D">D</a></li>
+                <li><a href="#sectionE" aria-label="Aller à la section E">E</a></li>
+                <li><a href="#sectionF" aria-label="Aller à la section F">F</a></li>
+                <li><a href="#sectionG" aria-label="Aller à la section G">G</a></li>
+                <li><a href="#sectionH" aria-label="Aller à la section H">H</a></li>
+                <li><a href="#sectionI" aria-label="Aller à la section I">I</a></li>
+                <li><a href="#sectionJ" aria-label="Aller à la section J">J</a></li>
+                <li><a href="#sectionK" aria-label="Aller à la section K">K</a></li>
+                <li><a href="#sectionL" aria-label="Aller à la section L">L</a></li>
+                <li><a href="#sectionM" aria-label="Aller à la section M">M</a></li>
+                <li><a href="#sectionN" aria-label="Aller à la section N">N</a></li>
+                <li><a href="#sectionO" aria-label="Aller à la section O">O</a></li>
+                <li><a href="#sectionP" aria-label="Aller à la section P">P</a></li>
+                <li><a href="#sectionQ" aria-label="Aller à la section Q">Q</a></li>
+                <li><a href="#sectionR" aria-label="Aller à la section R">R</a></li>
+                <li><a href="#sectionS" aria-label="Aller à la section S">S</a></li>
+                <li><a href="#sectionT" aria-label="Aller à la section T">T</a></li>
+                <li><a href="#sectionU" aria-label="Aller à la section U">U</a></li>
+                <li><a href="#sectionV" aria-label="Aller à la section V">V</a></li>
+                <li><a href="#sectionW" aria-label="Aller à la section W">W</a></li>
+                <li><a href="#sectionX" aria-label="Aller à la section X">X</a></li>
+                <li><a href="#sectionY" aria-label="Aller à la section Y">Y</a></li>
+                <li><a href="#sectionZ" aria-label="Aller à la section Z">Z</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="div-sections">
+            <section id="sectionA" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section A">Section A</summary>
+                    <h2>Alpha</h2>
+                    <p>La valeur alpha sert à changer la transparence d'un élément.</p>
+                    <div class="exemple exemple-a">
+                        <p>Exemples de transparence avec alpha:</p>
+                        <div class="exemple-rgba">RGBA: rgba(255, 0, 0, 0.5)</div>
+                        <div class="exemple-hsla">HSLA: hsla(120, 100%, 50%, 0.3)</div>
+                        <div class="exemple-opacity">Opacity: 0.60</div>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionB" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section B">Section B</summary>
+                    <h2>Border-radius</h2>
+                    <p>La règle <em>border-radius</em> permet d'arrondir les coins des formes en CSS.</p>
+                    <code>
+                        <pre>
+.exemple-b {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 10px;
+}
+                        </pre>
+                    </code>
+                    <div class="exemple">
+                        <p>Voici un exemple de border-radius:</p>
+                        <div class="exemple-b exemple"></div>
+                    </div>
+                    <div class="ligne"></div>
+                    <h2>Box-shadow</h2>
+                    <p><em>Box-shadow</em> permet d'ajouter une ombre derrière un élément.</p>
+                    <p>Voici un exemple de box-shadow:</p>
+                    <code>
+                        <pre>
+.exemple-box-shadow {
+    background-color: rgba(113, 113, 113, 0.869);
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 9px 5px 2px 1px black;
+}
+                        </pre>
+                    </code>
+                    <div class="exemple-box-shadow exemple"></div>
+                </details>
+            </section>
+            <section id="sectionC" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section C">Section C</summary>
+                    <h2>Caret-color</h2>
+                    <p>La propriété <em>caret-color</em> en CSS permet de changer la couleur du caret dans les champs de texte.</p>
+                    <code>
+                        <pre>
+input {
+    caret-color: red;
+}
+
+textarea {
+    color: rgb(109, 179, 3);
+}
+                        </pre>
+                    </code>
+                    <div class="exemple">
+                        <p>Voici un exemple de caret-color :</p>
+                        <input type="text" placeholder="Veuillez écrire quelque chose...">
+                        <textarea placeholder="Veuillez écrire quelque chose..."></textarea>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionD" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section D">Section D</summary>
+                    <h2>Display Flex</h2>
+                    <p><em>Flex</em> permet d'aligner les éléments d'un conteneur. Par exemple, <em>justify-content</em> aligne les éléments sur l'axe des X, alors que <em>align-items</em> le fait sur l'axe des Y. Il y a aussi <em>flex-direction</em> qui est souvent utilisé et qui permet de mettre les éléments en <em>column</em> ou en <em>row</em>.</p>
+                    <code>
+                        <pre>
+.exemple-d {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+                        </pre>
+                    </code>
+                    <div class="exemple exemple-d">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionE" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section E">Section E</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionF" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section F">Section F</summary>
+                    <h2>Filter</h2>
+                    <p>Avec <em>filter</em>, il est possible d'ajouter des filtres à des images.</p>
+                    <code>
+                        <pre>
+.img-f1 {
+    filter: hue-rotate(100deg);
+}
+
+.img-f2 {
+    filter: blur(3px);
+}
+                        </pre>
+                    </code>
+                    <div class="exemple-filter exemple">
+                        <img class="img-f img-f1" src="assets/img/cat.jpeg" alt="Chat blanc qui a un oeil bleu et un oeil brun">
+                        <img class="img-f img-f2" src="assets/img/cat.jpeg" alt="Chat blanc qui a un oeil bleu et un oeil brun">
+                    </div>
+                </details>
+            </section>
+            <section id="sectionG" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section G">Section G</summary>
+                    <h2>Grid</h2>
+                    <p>Avec <em>grid</em>, on peut transformer un conteneur en grille et choisir le nombre de colonnes et de rangées avec <em>grid-template-columns</em> et <em>grid-template-rows</em>.</p>
+                    <code>
+                        <pre>
+.exemple-g {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+                        </pre>
+                    </code>
+                    <div class="exemple exemple-g">
+                        <div class="grid-square"></div>
+                        <div class="grid-square"></div>
+                        <div class="grid-square"></div>
+                        <div class="grid-square"></div>
+                        <div class="grid-square"></div>
+                        <div class="grid-square"></div>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionH" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section H">Section H</summary>
+                    <h2>Hover effects</h2>
+                    <p>On peut styliser un élément au survol avec <em>:hover</em>.</p>
+                    <p>Voici un exemple:</p>
+                    <code>
+                        <pre>
+.survolerBtn {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    background-color: #af4c8c;
+    color: white;
+    border-radius: 15px;
+}
+
+.survolerBtn:hover {
+    background-color: #62244c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+                        </pre>
+                    </code>
+                    <div class="exemple">
+                        <button class="survolerBtn">Survoler</button>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionI" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section I">Section I</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionJ" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section J">Section J</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionK" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section K">Section K</summary>
+                    <h2>@keyframes</h2>
+                    <p>La règle CSS @keyframes permet la création d'animations directement dans CSS, celle-ci étant utilisée avec au moins une propriété d'animation. Il est possible de styliser et de choisir la vitesse de l'animation.</p>
+                    <div class="exemple">
+                        <p>Voici un exemple d'animation avec @keyframes:</p>
+                    </div>
+                    <pre>
+.exemple-k {
+    width: 50px;
+    height: 50px;
+    background-color: hotpink;
+    animation: color-move 3s infinite;
+}
+
+@keyframes color-move {
+    0% {
+        background: purple;
+        transform: translateX(0);
+    }
+    50% {
+        background: hotpink;
+        transform: translateX(100px);
+    }
+    100% {
+        background: purple;
+        transform: translateX(0);
+    }
+}
+                    </pre>
+                    <div class="exemple-k exemple"></div>
+                </details>
+            </section>
+            <section id="sectionL" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section L">Section L</summary>
+                    <h2>Linear-gradient</h2>
+                    <p>Avec <em>linear-gradient</em>, il est possible de créer des dégradés linéaires dans des éléments en CSS.</p>
+                    <code>
+                        <pre>
+.exemple-L {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(rgb(113, 9, 67), rgb(255, 58, 189));
+}
+                        </pre>
+                    </code>
+                    <div class="exemple">
+                        <div class="exemple-L exemple"></div>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionM" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section M">Section M</summary>
+                    <h2>Media queries</h2>
+                    <p>Les Media Queries permettent d'ajuster l'affichage de la page selon les différentes tailles d'écran.</p>
+                    <p>Voici un exemple de la façon dont on les utilise:</p>
+                    <code>
+                        <pre>
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        margin: 0 12px;
+        font-size: 17px;
+        }
+}
+                        </pre>
+                    </code>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionN" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section N">Section N</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionO" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section O">Section O</summary>
+                    <h2>Opacity</h2>
+                    <p>On peut modifier l'opacité des éléments avec <em>opacity</em>.</p>
+                    <p>Voici un exemple:</p>
+                    <code>
+                        <pre>
+.opacity-exemple {
+    opacity: 0.6;
+}
+                        </pre>
+                    </code>
+                    <div class="exemple">
+                        <img class="opacity-exemple" src="assets/img/rabbit.jpg" height="200" alt="Lapin bélier blanc et gris">
+                    </div>
+                </details>
+            </section>
+            <section id="sectionP" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section P">Section P</summary>
+                    <h2>Perspective</h2>
+                    <p>Avec la propriété <em>perspective</em>, on peut donner de la profondeur en 3D aux éléments enfants d'un conteneur, créant ainsi un effet de perspective.</p>
+                    <code>
+                        <pre>
+.front { transform: translateZ(50px); }
+.back { transform: rotateY(180deg) translateZ(50px); }
+.right { transform: rotateY(90deg) translateZ(50px); }
+.left { transform: rotateY(-90deg) translateZ(50px); }
+.top { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes rotateCube {
+    0% { transform: rotateX(0) rotateY(0); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+                        </pre>
+                    </code>
+                    <div class="exemple">
+                        <div class="scene">
+                            <div class="cube">
+                                <div class="face front">A</div>
+                                <div class="face back">B</div>
+                                <div class="face right">C</div>
+                                <div class="face left">D</div>
+                                <div class="face top">E</div>
+                                <div class="face bottom">F</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionQ" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section Q">Section Q</summary>
+                    <h2>Quotes</h2>
+                    <p>La propriété <em>quotes</em> permet de stylsier les citations.</p> 
+                    <code>
+                        <pre>
+.exemple-quotes {
+    quotes: "«" "»" "‹" "›";
+}
+
+.exemple-quotes q {
+    font-style: italic;
+}
+                        </pre>
+                    </code>
+                    <div class="exemple exemple-quotes">
+                        <p>
+                            <q>Voici un exemple.</q>
+                        </p>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionR" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section R">Section R</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionS" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section S">Section S</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionT" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section T">Section T</summary>
+                    <div class="text-shadow">
+                        <h2>Text-shadow</h2>
+                        <p>Text-shadow permet d'ajouter de l'ombre derrière le texte.</p>
+                        <code>
+                            <pre>
+.exemple-t-text {
+    text-shadow: 2px 2px 4px red;
+}
+                            </pre>
+                        </code>
+                        <div class="exemple">
+                            <h4 class="exemple-t-text exemple">Ceci est un exemple.</h4>
+                        </div>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="transform">
+                        <h2>Transform</h2>
+                        <p>La propriété <em>transform</em> permet d'appliquer des transformations sur un élément 2D ou 3D, dont la rotation, la translation, etc.</p>
+                        <p>Voici un exemple:</p>
+                        <code>
+                            <pre>
+.forme1 {
+    transform: rotate(0.2turn);
+    background-color: orange;
+}
+
+.forme2 {
+    transform: skew(15deg, 20deg);
+    ackground-color: green;
+}
+
+.forme3 {
+    background-color: red;
+    transform: scale(1, 0.5);
+}
+
+.forme4 {
+    background-color: blue;
+    transform: translate(1rem, 1rem);
+}
+
+.perspective {
+    perspective: 200px;
+}
+
+.forme5 {
+    background-color: hotpink;
+    transform: rotateX(30deg);
+}
+
+.forme6 {
+    background-color: purple;
+    transform: rotateY(30deg);
+}
+                            </pre>
+                        </code>
+                        <div class="exemple exemple-transform">
+                            <div class="transform-form forme1">1</div>
+                            <div class="transform-form forme2">2</div>
+                            <div class="transform-form forme3">3</div>
+                            <div class="transform-form forme4">4</div>
+                            <div class="perspective">
+                                <div class="transform-form forme5">5</div>
+                            </div>
+                            <div class="perspective">
+                                <div class="transform-form forme6">6</div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </section>
+            <section id="sectionU" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section U">Section U</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionV" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section V">Section V</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionW" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section W">Section W</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionX" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section X">Section X</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionY" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section Y">Section Y</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+            <section id="sectionZ" class="rectangle">
+                <details>
+                    <summary aria-label="Description de la section Z">Section Z</summary>
+                    <p>Il n'y a rien dans cette section pour le moment.</p>
+                    <div class="exemple"></div>
+                </details>
+            </section>
+        </div>
+        <div class="retour">
+            <button id="retourBtn" aria-label="Retour vers le haut">
+                <a href="#sectionA">Retour vers le haut</a>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">Erika Roy</p>
+        <p class="footer-text">582-AGT-LI</p>
+        <time datetime="2024-05-22">22 mai 2024</time>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
